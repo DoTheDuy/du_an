@@ -4,5 +4,5 @@
     require "view/shop-details.php";
 
     require "view/footer.php";
-    1 2
+    hehe
 ?>
