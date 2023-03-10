@@ -1,3 +1,10 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from caketheme.com/html/ruper/shop-grid-fullwidth.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Mar 2023 01:20:23 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
 <head>
 	<!-- Meta Data -->
 	<meta charset="UTF-8">
@@ -24,12 +31,8 @@
 	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css">
 
 	<!-- Google Web Fonts -->
-	<link
-		href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700&amp;display=swap"
-		rel="stylesheet">
-	<link
-		href="https://fonts.googleapis.com/css?family=EB+Garamond:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=EB+Garamond:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap" rel="stylesheet">
 </head>
 
 
@@ -47,8 +50,7 @@
 											<a href="#"><i class="icon-pin"></i>Find Store</a>
 										</div>
 										<div class="email hidden-xs">
-											<i class="icon-envelope"></i><a
-												href="mailto:support@ruper.com">support@ruper.com</a>
+											<i class="icon-envelope"></i><a href="mailto:support@ruper.com">support@ruper.com</a>
 										</div>
 									</div>
 								</div>
@@ -77,8 +79,7 @@
 							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 header-center">
 								<div class="site-logo">
 									<a href="index2.html">
-										<img width="400" height="79" src="media/logo.png"
-											alt="Ruper – Furniture HTML Theme" />
+										<img width="400" height="79" src="media/logo.png" alt="Ruper – Furniture HTML Theme" />
 									</a>
 								</div>
 							</div>
@@ -86,40 +87,31 @@
 								<div class="ruper-topcart dropdown">
 									<div class="dropdown mini-cart top-cart">
 										<div class="remove-cart-shadow"></div>
-										<a class="dropdown-toggle cart-icon" href="#" role="button"
-											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<div class="icons-cart"><i class="icon-large-paper-bag"></i><span
-													class="cart-count">2</span></div>
+										<a class="dropdown-toggle cart-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<div class="icons-cart"><i class="icon-large-paper-bag"></i><span class="cart-count">2</span></div>
 										</a>
 										<div class="dropdown-menu cart-popup">
 											<div class="cart-empty-wrap">
 												<ul class="cart-list">
 													<li class="empty">
 														<span>No products in the cart.</span>
-														<a class="go-shop" href="shop-grid-left.html">GO TO SHOP<i
-																aria-hidden="true" class="arrow_right"></i></a>
+														<a class="go-shop" href="shop-grid-left.html">GO TO SHOP<i aria-hidden="true" class="arrow_right"></i></a>
 													</li>
 												</ul>
 											</div>
 											<div class="cart-list-wrap">
 												<ul class="cart-list ">
 													<li class="mini-cart-item">
-														<a href="#" class="remove" title="Remove this item"><i
-																class="icon_close"></i></a>
-														<a href="shop-details.html" class="product-image"><img
-																width="600" height="600" src="media/product/3.jpg"
-																alt=""></a>
+														<a href="#" class="remove" title="Remove this item"><i class="icon_close"></i></a>
+														<a href="shop-details.html" class="product-image"><img width="600" height="600" src="media/product/3.jpg" alt=""></a>
 														<a href="shop-details.html" class="product-name">Chair Oak Matt
 															Lacquered</a>
 														<div class="quantity">Qty: 1</div>
 														<div class="price">$150.00</div>
 													</li>
 													<li class="mini-cart-item">
-														<a href="#" class="remove" title="Remove this item"><i
-																class="icon_close"></i></a>
-														<a href="shop-details.html" class="product-image"><img
-																width="600" height="600" src="media/product/1.jpg"
-																alt=""></a>
+														<a href="#" class="remove" title="Remove this item"><i class="icon_close"></i></a>
+														<a href="shop-details.html" class="product-image"><img width="600" height="600" src="media/product/1.jpg" alt=""></a>
 														<a href="shop-details.html" class="product-name">Zunkel
 															Schwarz</a>
 														<div class="quantity">Qty: 1</div>
@@ -132,16 +124,15 @@
 												</div>
 												<div class="free-ship">
 													<div class="title-ship">Buy <strong>$400</strong> more to enjoy
-														<strong>FREE Shipping</strong></div>
+														<strong>FREE Shipping</strong>
+													</div>
 													<div class="total-percent">
 														<div class="percent" style="width:20%"></div>
 													</div>
 												</div>
 												<div class="buttons">
-													<a href="shop-cart.html"
-														class="button btn view-cart btn-primary">View cart</a>
-													<a href="shop-checkout.html"
-														class="button btn checkout btn-default">Check out</a>
+													<a href="shop-cart.html" class="button btn view-cart btn-primary">View cart</a>
+													<a href="shop-checkout.html" class="button btn checkout btn-default">Check out</a>
 												</div>
 											</div>
 										</div>
@@ -186,8 +177,7 @@
 									<div class="site-navigation">
 										<nav id="main-navigation">
 											<ul id="menu-main-menu" class="menu">
-												<li
-													class="level-0 menu-item menu-item-has-children mega-menu current-menu-item">
+												<li class="level-0 menu-item menu-item-has-children mega-menu current-menu-item">
 													<a href="index.html"><span class="menu-item-text">Home</span></a>
 													<div class="sub-menu">
 														<div class="row">
@@ -196,43 +186,35 @@
 																	<h2 class="sub-menu-title">Furniture 1</h2>
 																	<ul class="menu-list">
 																		<li>
-																			<a href="index.html"><span
-																					class="menu-item-text">Home
+																			<a href="index.html"><span class="menu-item-text">Home
 																					Categories</span></a>
 																		</li>
 																		<li>
-																			<a href="index2.html"><span
-																					class="menu-item-text">Home
+																			<a href="index2.html"><span class="menu-item-text">Home
 																					Clean</span></a>
 																		</li>
 																		<li>
-																			<a href="index3.html"><span
-																					class="menu-item-text">Home
+																			<a href="index3.html"><span class="menu-item-text">Home
 																					Collection</span></a>
 																		</li>
 																		<li>
-																			<a href="index4.html"><span
-																					class="menu-item-text">Home
+																			<a href="index4.html"><span class="menu-item-text">Home
 																					Grid</span></a>
 																		</li>
 																		<li>
-																			<a href="index5.html"><span
-																					class="menu-item-text">Home
+																			<a href="index5.html"><span class="menu-item-text">Home
 																					Minimal</span></a>
 																		</li>
 																		<li>
-																			<a href="index6.html"><span
-																					class="menu-item-text">Home
+																			<a href="index6.html"><span class="menu-item-text">Home
 																					Modern</span></a>
 																		</li>
 																		<li>
-																			<a href="index7.html"><span
-																					class="menu-item-text">Home
+																			<a href="index7.html"><span class="menu-item-text">Home
 																					Stylish</span></a>
 																		</li>
 																		<li>
-																			<a href="index8.html"><span
-																					class="menu-item-text">Home
+																			<a href="index8.html"><span class="menu-item-text">Home
 																					Unique</span></a>
 																		</li>
 																	</ul>
@@ -243,38 +225,31 @@
 																	<h2 class="sub-menu-title">Furniture 2</h2>
 																	<ul class="menu-list">
 																		<li>
-																			<a href="index9.html"><span
-																					class="menu-item-text">Home
+																			<a href="index9.html"><span class="menu-item-text">Home
 																					Split</span></a>
 																		</li>
 																		<li>
-																			<a href="index10.html"><span
-																					class="menu-item-text">Home
+																			<a href="index10.html"><span class="menu-item-text">Home
 																					Gothic</span></a>
 																		</li>
 																		<li>
-																			<a href="index11.html"><span
-																					class="menu-item-text">Home
+																			<a href="index11.html"><span class="menu-item-text">Home
 																					Luxury</span></a>
 																		</li>
 																		<li>
-																			<a href="index12.html"><span
-																					class="menu-item-text">Home
+																			<a href="index12.html"><span class="menu-item-text">Home
 																					Scandinavian</span></a>
 																		</li>
 																		<li>
-																			<a href="index13.html"><span
-																					class="menu-item-text">Home
+																			<a href="index13.html"><span class="menu-item-text">Home
 																					Mid-Century</span></a>
 																		</li>
 																		<li>
-																			<a href="index14.html"><span
-																					class="menu-item-text">Home
+																			<a href="index14.html"><span class="menu-item-text">Home
 																					Retro</span></a>
 																		</li>
 																		<li>
-																			<a href="index15.html"><span
-																					class="menu-item-text">Home Color
+																			<a href="index15.html"><span class="menu-item-text">Home Color
 																					Block</span></a>
 																		</li>
 																	</ul>
@@ -284,62 +259,50 @@
 													</div>
 												</li>
 												<li class="level-0 menu-item menu-item-has-children">
-													<a href="shop-grid-left.html"><span
-															class="menu-item-text">Shop</span></a>
+													<a href="shop-grid-left.html"><span class="menu-item-text">Shop</span></a>
 													<ul class="sub-menu">
 														<li class="level-1 menu-item menu-item-has-children">
-															<a href="shop-grid-left.html"><span
-																	class="menu-item-text">Shop - Products</span></a>
+															<a href="shop-grid-left.html"><span class="menu-item-text">Shop - Products</span></a>
 															<ul class="sub-menu">
 																<li>
-																	<a href="shop-grid-left.html"><span
-																			class="menu-item-text">Shop Grid - Left
+																	<a href="shop-grid-left.html"><span class="menu-item-text">Shop Grid - Left
 																			Sidebar</span></a>
 																</li>
 																<li>
-																	<a href="shop-list-left.html"><span
-																			class="menu-item-text">Shop List - Left
+																	<a href="shop-list-left.html"><span class="menu-item-text">Shop List - Left
 																			Sidebar</span></a>
 																</li>
 																<li>
-																	<a href="shop-grid-right.html"><span
-																			class="menu-item-text">Shop Grid - Right
+																	<a href="shop-grid-right.html"><span class="menu-item-text">Shop Grid - Right
 																			Sidebar</span></a>
 																</li>
 																<li>
-																	<a href="shop-list-right.html"><span
-																			class="menu-item-text">Shop List - Right
+																	<a href="shop-list-right.html"><span class="menu-item-text">Shop List - Right
 																			Sidebar</span></a>
 																</li>
 																<li>
-																	<a href="shop-grid-fullwidth.html"><span
-																			class="menu-item-text">Shop Grid - No
+																	<a href="shop-grid-fullwidth.html"><span class="menu-item-text">Shop Grid - No
 																			Sidebar</span></a>
 																</li>
 															</ul>
 														</li>
 														<li>
-															<a href="shop-details.html"><span
-																	class="menu-item-text">Shop Details</span></a>
+															<a href="shop-details.html"><span class="menu-item-text">Shop Details</span></a>
 														</li>
 														<li>
 															<a href="shop-cart.html"><span class="menu-item-text">Shop -
 																	Cart</span></a>
 														</li>
 														<li>
-															<a href="shop-checkout.html"><span
-																	class="menu-item-text">Shop - Checkout</span></a>
+															<a href="shop-checkout.html"><span class="menu-item-text">Shop - Checkout</span></a>
 														</li>
 														<li>
-															<a href="shop-wishlist.html"><span
-																	class="menu-item-text">Shop - Wishlist</span></a>
+															<a href="shop-wishlist.html"><span class="menu-item-text">Shop - Wishlist</span></a>
 														</li>
 													</ul>
 												</li>
-												<li
-													class="level-0 menu-item menu-item-has-children mega-menu mega-menu-fullwidth">
-													<a href="blog-grid-left.html"><span
-															class="menu-item-text">Blog</span></a>
+												<li class="level-0 menu-item menu-item-has-children mega-menu mega-menu-fullwidth">
+													<a href="blog-grid-left.html"><span class="menu-item-text">Blog</span></a>
 													<div class="sub-menu">
 														<div class="row">
 															<div class="col-md-5">
@@ -347,28 +310,23 @@
 																	<h2 class="sub-menu-title">Blog Category</h2>
 																	<ul class="menu-list">
 																		<li>
-																			<a href="blog-grid-left.html"><span
-																					class="menu-item-text">Blog Grid -
+																			<a href="blog-grid-left.html"><span class="menu-item-text">Blog Grid -
 																					Left Sidebar</span></a>
 																		</li>
 																		<li>
-																			<a href="blog-grid-right.html"><span
-																					class="menu-item-text">Blog Grid -
+																			<a href="blog-grid-right.html"><span class="menu-item-text">Blog Grid -
 																					Right Sidebar</span></a>
 																		</li>
 																		<li>
-																			<a href="blog-list-left.html"><span
-																					class="menu-item-text">Blog List -
+																			<a href="blog-list-left.html"><span class="menu-item-text">Blog List -
 																					Left Sidebar</span></a>
 																		</li>
 																		<li>
-																			<a href="blog-list-right.html"><span
-																					class="menu-item-text">Blog List -
+																			<a href="blog-list-right.html"><span class="menu-item-text">Blog List -
 																					Right Sidebar</span></a>
 																		</li>
 																		<li>
-																			<a href="blog-grid-fullwidth.html"><span
-																					class="menu-item-text">Blog Grid -
+																			<a href="blog-grid-fullwidth.html"><span class="menu-item-text">Blog Grid -
 																					No Sidebar</span></a>
 																		</li>
 																	</ul>
@@ -378,18 +336,15 @@
 																	<h2 class="sub-menu-title">Blog Details</h2>
 																	<ul class="menu-list">
 																		<li>
-																			<a href="blog-details-left.html"><span
-																					class="menu-item-text">Blog Details
+																			<a href="blog-details-left.html"><span class="menu-item-text">Blog Details
 																					- Left Sidebar</span></a>
 																		</li>
 																		<li>
-																			<a href="blog-details-right.html"><span
-																					class="menu-item-text">Blog Details
+																			<a href="blog-details-right.html"><span class="menu-item-text">Blog Details
 																					- Right Sidebar</span></a>
 																		</li>
 																		<li>
-																			<a href="blog-details-fullwidth.html"><span
-																					class="menu-item-text">Blog Details
+																			<a href="blog-details-fullwidth.html"><span class="menu-item-text">Blog Details
 																					- No Sidebar</span></a>
 																		</li>
 																	</ul>
@@ -401,14 +356,12 @@
 																	<div class="block block-posts recent-posts p-t-5">
 																		<ul class="posts-list">
 																			<li class="post-item">
-																				<a href="blog-details-right.html"
-																					class="post-image">
+																				<a href="blog-details-right.html" class="post-image">
 																					<img src="media/blog/1.jpg">
 																				</a>
 																				<div class="post-content">
 																					<h2 class="post-title">
-																						<a
-																							href="blog-details-right.html">
+																						<a href="blog-details-right.html">
 																							Easy Fixes For Home Decor
 																						</a>
 																					</h2>
@@ -421,14 +374,12 @@
 																				</div>
 																			</li>
 																			<li class="post-item">
-																				<a href="blog-details-right.html"
-																					class="post-image">
+																				<a href="blog-details-right.html" class="post-image">
 																					<img src="media/blog/2.jpg">
 																				</a>
 																				<div class="post-content">
 																					<h2 class="post-title">
-																						<a
-																							href="blog-details-right.html">
+																						<a href="blog-details-right.html">
 																							How To Make Your Home A
 																							Showplace
 																						</a>
@@ -442,14 +393,12 @@
 																				</div>
 																			</li>
 																			<li class="post-item">
-																				<a href="blog-details-right.html"
-																					class="post-image">
+																				<a href="blog-details-right.html" class="post-image">
 																					<img src="media/blog/3.jpg">
 																				</a>
 																				<div class="post-content">
 																					<h2 class="post-title">
-																						<a
-																							href="blog-details-right.html">
+																						<a href="blog-details-right.html">
 																							Stunning Furniture With
 																							Aesthetic Appeal
 																						</a>
@@ -477,24 +426,20 @@
 																	/ Register</span></a>
 														</li>
 														<li>
-															<a href="page-forgot-password.html"><span
-																	class="menu-item-text">Forgot Password</span></a>
+															<a href="page-forgot-password.html"><span class="menu-item-text">Forgot Password</span></a>
 														</li>
 														<li>
-															<a href="page-my-account.html"><span
-																	class="menu-item-text">My Account</span></a>
+															<a href="page-my-account.html"><span class="menu-item-text">My Account</span></a>
 														</li>
 														<li>
 															<a href="page-about.html"><span class="menu-item-text">About
 																	Us</span></a>
 														</li>
 														<li>
-															<a href="page-contact.html"><span
-																	class="menu-item-text">Contact</span></a>
+															<a href="page-contact.html"><span class="menu-item-text">Contact</span></a>
 														</li>
 														<li>
-															<a href="page-faq.html"><span
-																	class="menu-item-text">FAQ</span></a>
+															<a href="page-faq.html"><span class="menu-item-text">FAQ</span></a>
 														</li>
 														<li>
 															<a href="page-404.html"><span class="menu-item-text">Page
@@ -503,8 +448,7 @@
 													</ul>
 												</li>
 												<li class="level-0 menu-item">
-													<a href="page-contact.html"><span
-															class="menu-item-text">Contact</span></a>
+													<a href="page-contact.html"><span class="menu-item-text">Contact</span></a>
 												</li>
 											</ul>
 										</nav>
@@ -514,8 +458,7 @@
 								<div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 text-center header-center">
 									<div class="site-logo">
 										<a href="index2.html">
-											<img width="400" height="79" src="media/logo.png"
-												alt="Ruper – Furniture HTML Theme" />
+											<img width="400" height="79" src="media/logo.png" alt="Ruper – Furniture HTML Theme" />
 										</a>
 									</div>
 								</div>
@@ -535,21 +478,15 @@
 																<p class="status"></p>
 																<div class="content">
 																	<div class="username">
-																		<input type="text" required="required"
-																			class="input-text" name="username"
-																			id="username" placeholder="Your name" />
+																		<input type="text" required="required" class="input-text" name="username" id="username" placeholder="Your name" />
 																	</div>
 																	<div class="password">
-																		<input class="input-text" required="required"
-																			type="password" name="password"
-																			id="password" placeholder="Password" />
+																		<input class="input-text" required="required" type="password" name="password" id="password" placeholder="Password" />
 																	</div>
 																	<div class="rememberme-lost">
 																		<div class="rememberme">
-																			<input name="rememberme" type="checkbox"
-																				id="rememberme" value="forever" />
-																			<label for="rememberme"
-																				class="inline">Remember me</label>
+																			<input name="rememberme" type="checkbox" id="rememberme" value="forever" />
+																			<label for="rememberme" class="inline">Remember me</label>
 																		</div>
 																		<div class="lost_password">
 																			<a href="forgot-password.html">Lost your
@@ -557,8 +494,7 @@
 																		</div>
 																	</div>
 																	<div class="button-login">
-																		<input type="submit" class="button" name="login"
-																			value="Login" />
+																		<input type="submit" class="button" name="login" value="Login" />
 																	</div>
 																	<div class="button-next-reregister">Create An
 																		Account</div>
@@ -570,18 +506,13 @@
 																<h2>REGISTER</h2>
 																<div class="content">
 																	<div class="email">
-																		<input type="email" class="input-text"
-																			placeholder="Email" name="email"
-																			id="reg_email" value="" />
+																		<input type="email" class="input-text" placeholder="Email" name="email" id="reg_email" value="" />
 																	</div>
 																	<div class="password">
-																		<input type="password" class="input-text"
-																			placeholder="Password" name="password"
-																			id="reg_password" />
+																		<input type="password" class="input-text" placeholder="Password" name="password" id="reg_password" />
 																	</div>
 																	<div class="button-register">
-																		<input type="submit" class="button"
-																			name="register" value="Register" />
+																		<input type="submit" class="button" name="register" value="Register" />
 																	</div>
 																	<div class="button-next-login">Already has an
 																		account</div>
@@ -608,10 +539,8 @@
 										<div class="ruper-topcart dropdown light">
 											<div class="dropdown mini-cart top-cart">
 												<div class="remove-cart-shadow"></div>
-												<a class="dropdown-toggle cart-icon" href="#" role="button"
-													data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-													<div class="icons-cart"><i class="icon-large-paper-bag"></i><span
-															class="cart-count">2</span></div>
+												<a class="dropdown-toggle cart-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<div class="icons-cart"><i class="icon-large-paper-bag"></i><span class="cart-count">2</span></div>
 												</a>
 												<div class="dropdown-menu cart-popup">
 													<div class="cart-empty-wrap">
@@ -619,30 +548,23 @@
 															<li class="empty">
 																<span>No products in the cart.</span>
 																<a class="go-shop" href="shop-grid-left.html">GO TO
-																	SHOP<i aria-hidden="true"
-																		class="arrow_right"></i></a>
+																	SHOP<i aria-hidden="true" class="arrow_right"></i></a>
 															</li>
 														</ul>
 													</div>
 													<div class="cart-list-wrap">
 														<ul class="cart-list ">
 															<li class="mini-cart-item">
-																<a href="#" class="remove" title="Remove this item"><i
-																		class="icon_close"></i></a>
-																<a href="shop-details.html" class="product-image"><img
-																		width="600" height="600"
-																		src="media/product/3.jpg" alt=""></a>
+																<a href="#" class="remove" title="Remove this item"><i class="icon_close"></i></a>
+																<a href="shop-details.html" class="product-image"><img width="600" height="600" src="media/product/3.jpg" alt=""></a>
 																<a href="shop-details.html" class="product-name">Chair
 																	Oak Matt Lacquered</a>
 																<div class="quantity">Qty: 1</div>
 																<div class="price">$150.00</div>
 															</li>
 															<li class="mini-cart-item">
-																<a href="#" class="remove" title="Remove this item"><i
-																		class="icon_close"></i></a>
-																<a href="shop-details.html" class="product-image"><img
-																		width="600" height="600"
-																		src="media/product/1.jpg" alt=""></a>
+																<a href="#" class="remove" title="Remove this item"><i class="icon_close"></i></a>
+																<a href="shop-details.html" class="product-image"><img width="600" height="600" src="media/product/1.jpg" alt=""></a>
 																<a href="shop-details.html" class="product-name">Zunkel
 																	Schwarz</a>
 																<div class="quantity">Qty: 1</div>
@@ -661,10 +583,8 @@
 															</div>
 														</div>
 														<div class="buttons">
-															<a href="shop-cart.html"
-																class="button btn view-cart btn-primary">View cart</a>
-															<a href="shop-checkout.html"
-																class="button btn checkout btn-default">Check out</a>
+															<a href="shop-cart.html" class="button btn view-cart btn-primary">View cart</a>
+															<a href="shop-checkout.html" class="button btn checkout btn-default">Check out</a>
 														</div>
 													</div>
 												</div>

@@ -1,7 +1,7 @@
 <?php
     require "view/header.php";
 
-    require "view/page-my-account.php";
+    require "view/shop-details.php";
 
     require "view/footer.php";
 ?>
