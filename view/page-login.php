@@ -58,11 +58,23 @@
 												<form method="post" class="register">
 													<div class="email">
 														<label>Email address <span class="required">*</span></label>
-														<input type="email" class="input-text" name="email" value="">
+														<input type="email" name="email" class="input-text"  value="">
+													</div>
+													<div class="email">
+														<label>Name  <span class="required">*</span></label>
+														<input type="text" name="ten_khach_hang" class="input-text" value="">
 													</div>
 													<div class="password">
 														<label>Password <span class="required">*</span></label>
-														<input type="password" class="input-text" name="password">
+														<input type="password" class="input-text" name="mat_khau">
+													</div>
+													<div class="email" >
+														<label>Phone Number <span class="required">*</span></label>
+														<input type="tel" name="so_dt"   placeholder="Phone number" value="" required>
+													</div>
+													<div class="email">
+														<label>Address <span class="required">*</span></label>
+														<input type="text" name="dia_chi" class="input-text" value="">
 													</div>
 													<div class="button-register">
 														<input type="submit" class="button" name="register" value="Register">
