@@ -13,6 +13,7 @@
             case "shop-details":
                 require "view/shop-details.php";
                 break;
+            
             default:
                 require "view/home.php";
                 break;
