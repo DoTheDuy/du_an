@@ -934,7 +934,7 @@
 										<div class="box">
 											<div class="box-icon">
 												<span>
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-icon2 plant" x="0" y="0" viewBox="0 0 479.965 479.965" style="enable-background:new 0 0 512 512" xml:space="preserve">
+													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-icon2 plant" x="0" y="0" viewBox="0 0 479.965 479.965" style="enable-background:new 0 0 512 512" xml:space="preserve" >
 														<g>
 															<path xmlns="http://www.w3.org/2000/svg" d="m433.737 148.658-.135 232.91c-.012 22.527-23.058 37.706-43.805 28.854-10.328-4.417-4.09-19.158 6.31-14.704 10.146 4.33 21.489-3.028 21.495-14.16l.135-232.905c0-73.143-59.51-132.653-132.658-132.653h-70.684c-73.148 0-132.658 59.51-132.658 132.658l.046 84.339c.002 4.418-3.577 8.002-7.996 8.004-4.418.002-8.002-3.576-8.004-7.996l-.046-84.343c0-81.974 66.687-148.662 148.658-148.662h70.684c81.97 0 148.658 66.688 148.658 148.658zm-43.249 46.3c0-3.576-2.373-6.718-5.813-7.695-28.699-8.157-52.95-29.228-64.479-58.278-2.517-6.346-11.366-6.82-14.53-.746-12.747 24.464-32.552 44.98-58.176 58.619.114-10.951-2.578-22.012-8.212-32.027-2.812-4.998-9.796-5.469-13.283-.994-10.676 13.7-29.434 32.284-58.17 43.013-4.14 1.546-6.242 6.154-4.697 10.293 1.547 4.141 6.156 6.24 10.293 4.697 25.487-9.516 43.953-24.507 56.473-37.942 2.062 7.8 2.186 16.173.035 24.402-1.667 6.384 4.701 11.939 10.803 9.414 29.883-12.382 54.279-32.693 71.328-58.765 14.307 25.285 36.867 43.099 62.429 51.882v104.087c0 48.504-28.468 92.987-72.524 113.327-4.011 1.853-5.762 6.605-3.91 10.617 1.853 4.01 6.603 5.762 10.617 3.91 49.378-22.797 81.397-72.475 81.813-126.779.005-.179.003-110.857.003-111.035zm-154.324 195.644c-14.535-14.533-38.057-14.534-52.593 0-4.693 4.697-12.335 4.695-17.028 0l-31.007-31.005c-4.695-4.695-4.694-12.336.001-17.03 4.077-4.078 7.078-8.897 8.919-14.326 1.419-4.185-.822-8.727-5.007-10.146-4.183-1.42-8.727.822-10.146 5.007-1.045 3.083-2.755 5.824-5.082 8.151-10.932 10.934-10.932 28.723 0 39.657l31.007 31.006c10.935 10.934 28.725 10.932 39.657 0 8.279-8.281 21.684-8.281 29.964 0l14.647 14.646c8.28 8.28 8.282 21.683 0 29.964-23.261 23.263-61.109 23.261-84.368 0l-75.518-75.518c-23.261-23.26-23.261-61.108 0-84.368 8.261-8.263 21.702-8.263 29.963-.002l1.599 1.6c5.206 5.208 13.771 1.152 13.753-5.771l-.188-69.488c-.012-4.411-3.591-7.979-8-7.979-4.426 0-8.012 3.593-8 8.021l.147 54.248c-47.626-19.81-89.98 65.661-40.588 115.054l75.518 75.518c29.501 29.499 77.496 29.499 106.997 0 14.533-14.535 14.534-38.058-.001-52.593zm-18.427-113.602v-21c0-4.418-3.582-8-8-8s-8 3.582-8 8v21c0 4.418 3.582 8 8 8s8-3.582 8-8zm80-21c0-4.418-3.582-8-8-8s-8 3.582-8 8v21c0 4.418 3.582 8 8 8s8-3.582 8-8zm-30.8 81.6c-11.185 8.39-26.871 8.649-38.399.001-3.534-2.652-8.549-1.936-11.2 1.599s-1.936 8.549 1.599 11.2c17.277 12.963 40.807 12.596 57.601.001 3.535-2.651 4.251-7.666 1.601-11.2-2.655-3.537-7.671-4.252-11.202-1.601z" fill="" data-original="" style=""></path>
 														</g>
@@ -990,9 +990,9 @@
 					// console.log(price, priceSale, sale)
 					var saleHTML = (sale == 0) ? `` : `<div class="onsale">-${sale}%</div>`
 
-					var priceHTML = (priceSale == -1) ? `<span class="price">$150.00</span>` : `<span class="price">
-												<del aria-hidden="true"><span>$150.00</span></del>
-												<ins><span>$100.00</span></ins>
+					var priceHTML = (priceSale == -1) ? `<span class="price">$${price}</span>` : `<span class="price">
+												<del aria-hidden="true"><span>$${price}</span></del>
+												<ins><span>$${priceSale}</span></ins>
 											</span>`
 					listProHTML += `
 							<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
@@ -1011,7 +1011,7 @@
 										</div>
 										<div class="product-button">
 											<div class="btn-add-to-cart" data-title="Add to cart">
-												<a rel="nofollow" href="#" class="product-btn button">Add to
+												<a rel="nofollow" href="#" class="product-btn button" onclick="addCart(${id})">Add to
 													cart</a>
 											</div>
 											<div class="btn-wishlist" data-title="Wishlist">
@@ -1029,7 +1029,7 @@
 									</div>
 									<div class="products-content">
 										<div class="contents text-center">
-											<h3 class="product-title"><a href="index.php?act=shop-details&id=${id}">Dining Table</a></h3>
+											<h3 class="product-title"><a href="index.php?act=shop-details&id=${id}">${name}</a></h3>
 											` + priceHTML + `
 										</div>
 									</div>
@@ -1054,4 +1054,127 @@
 
 		// $(".quickview-load").load("test.php")
 	}
+
+	function addCart(id, qtt = 1) {
+
+		var form_data = new FormData();
+		form_data.append('id', id);
+		form_data.append('qtt', qtt);
+		$.ajax({
+			url: "api/main.php?act=addCart", //Server api to receive the file
+			type: "POST",
+			dataType: 'script',
+			cache: false,
+			contentType: false,
+			processData: false,
+			data: form_data,
+			success: function(suc) {
+				loadCart()
+			}
+		});
+
+	}
+
+	function loadCart() {
+		var headerDesktop = document.querySelector('.header-desktop')
+		var cartBlock = headerDesktop.querySelector('.cart-popup')
+		cartBlock.innerHTML = `
+			<div class="cart-list-wrap">
+				<ul class="cart-list ">
+
+				</ul>
+				<div class="total-cart">
+					<div class="title-total">Total: </div>
+					<div class="total-price"><span>$100.00</span></div>
+				</div>
+				<div class="free-ship">
+					<div class="title-ship">Buy <strong>$400</strong> more to
+						enjoy <strong>FREE Shipping</strong></div>
+					<div class="total-percent">
+						<div class="percent" style="width:20%"></div>
+					</div>
+				</div>
+				<div class="buttons">
+					<a href="shop-cart.html" class="button btn view-cart btn-primary">View cart</a>
+					<a href="shop-checkout.html" class="button btn checkout btn-default">Check out</a>
+				</div>
+			</div>
+		`
+		var totalCart = headerDesktop.querySelector('.total-cart')
+		var totalPrice = totalCart.querySelector('.total-price').querySelector('span')
+		var freeShip = headerDesktop.querySelector('.free-ship')
+		var cart = headerDesktop.querySelector(".cart-list")
+
+		$.ajax({
+			url: "api/main.php?act=loadCart", //Server api to receive the file
+			type: "GET",
+			cache: false,
+			contentType: false,
+			processData: false,
+			success: function(suc) {
+				var listPro = JSON.parse(suc)
+				if(listPro.length == 0) {
+					cartBlock.innerHTML = `
+					<div class="cart-list-wrap">
+						<ul class="cart-list">
+							<li class="empty">
+								<span>No products in the cart.</span>
+								<a class="go-shop" href="shop-grid-left.html">GO TO
+									SHOP<i aria-hidden="true" class="arrow_right"></i></a>
+							</li>
+						</ul>
+					</div>
+					`
+
+				} else {
+					var cartHTML = ``
+					var total = 0
+					listPro.forEach((pro) => {
+						var id = pro['id'];
+						var name = pro['name'];
+						var img = pro['img'];
+						var qtt = Number(pro['qtt']);
+						var price = Number(pro['price']) * qtt;
+						total += price
+						cartHTML += `
+							<li class="mini-cart-item">
+								<a href="#" class="remove" title="Remove this item" onclick="removeCart(${id})"><i class="icon_close"></i></a>
+								<a href="shop-details.html" class="product-image"><img width="600" height="600" src="media/product/${img}" alt=""></a>
+								<a href="shop-details.html" class="product-name">${name}</a>
+								<div class="quantity">Qty: ${qtt}</div>
+								<div class="price">$${price}</div>
+							</li>
+						`
+					})
+	
+					cart.innerHTML = cartHTML
+					totalPrice.innerHTML = `$${total.toFixed(2)}`
+				}
+			}
+		});
+	}
+
+	loadCart()
+
+	function removeCart(id) {
+
+		var form_data = new FormData();
+		form_data.append('id', id);
+		$.ajax({
+			url: "api/main.php?act=removeCart", //Server api to receive the file
+			type: "POST",
+			dataType: 'script',
+			cache: false,
+			contentType: false,
+			processData: false,
+			data: form_data,
+			success: function(suc) {
+				loadCart()
+			}
+		});
+
+
+	}
 </script>
+
+<!-- <a href="shop-cart.html" class="added-to-cart product-btn" title="View cart" tabindex="0">View cart</a> -->

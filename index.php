@@ -2,6 +2,9 @@
     session_start();
 
     require "view/header.php";
+    if (!isset($_SESSION['cart'])) {
+        $_SESSION['cart'] = [];
+    }
 
     if(isset($_GET['act'])) {
 
