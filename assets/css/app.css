@@ -1361,7 +1361,7 @@ a:hover,[class~=h1],[class~=h3],[class~=h2]{color:#000;}.position-h-center.anima
   font-size: 18px;
   font-weight: 500;
 }
-.shop-details .buttons .add-to-cart-wrap .btn-add-to-cart {
+.shop-details .buttons .add-to-cart-wrap .btn-add-to-cart_ct {
   -webkit-transition: none;
   transition: none;
   font-size: 16px;
@@ -1382,13 +1382,13 @@ a:hover,[class~=h1],[class~=h3],[class~=h2]{color:#000;}.position-h-center.anima
   margin: 0;
   white-space: nowrap;
 }
-.shop-details .buttons .add-to-cart-wrap .btn-add-to-cart a {
+.shop-details .buttons .add-to-cart-wrap .btn-add-to-cart_ct a {
   color: #fff;
 }
-.shop-details .buttons .add-to-cart-wrap .btn-add-to-cart:hover {
+.shop-details .buttons .add-to-cart-wrap .btn-add-to-cart_ct:hover {
   background: #000;
 }
-.shop-details .buttons .add-to-cart-wrap .btn-add-to-cart a.loading:before {
+.shop-details .buttons .add-to-cart-wrap .btn-add-to-cart_ct a.loading:before {
   position: relative;
   display: inline-block;
   content: "";
@@ -1408,10 +1408,10 @@ a:hover,[class~=h1],[class~=h3],[class~=h2]{color:#000;}.position-h-center.anima
   top: 3px;
   margin-right: 10px;
 }
-.shop-details .buttons .add-to-cart-wrap .btn-add-to-cart a.added {
+.shop-details .buttons .add-to-cart-wrap .btn-add-to-cart_ct a.added {
   display: none;
 }
-.shop-details .buttons .add-to-cart-wrap .btn-add-to-cart a.added-to-cart:before {
+.shop-details .buttons .add-to-cart-wrap .btn-add-to-cart_ct a.added-to-cart:before {
   content: "\4e";
   font-family: ElegantIcons;
   margin-right: 5px;

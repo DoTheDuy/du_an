@@ -1,5 +1,8 @@
 <?php
     session_start();
+    require "model/pdo.php";
+    require "model/product.php";
+    require "global.php";
 
     require "view/header.php";
     if (!isset($_SESSION['cart'])) {
@@ -14,7 +17,15 @@
 
         switch ($act) {
             case "shop-details":
+                if(isset($_GET['id'])){
+                    $id = $_GET['id'];
+                    $pro = get_product($id);
+                }
                 require "view/shop-details.php";
+                break;
+            
+            case "shop-cart":
+                require "view/shop-cart.php";
                 break;
             
             default:
