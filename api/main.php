@@ -37,14 +37,14 @@ if (isset($_GET['act'])) {
                 $qtt = $_POST['qtt'];
                 $id = $_POST['id'];
                 $add = 1;
-                foreach($cart as $item) {
-                    if($item['id'] == $id) {
+                foreach ($cart as $index => $item) {
+                    if ($item['id'] == $id) {
                         $add = 0;
-                        $item['qtt'] += $qtt;
+                        $_SESSION['cart'][$index]['qtt'] += $qtt;
                         break;
                     }
                 }
-                if($add == 1) {
+                if ($add == 1) {
                     $sp = [
                         'id' => $id,
                         'qtt' => $qtt,
@@ -57,7 +57,7 @@ if (isset($_GET['act'])) {
         case "loadCart":
             $cart = $_SESSION['cart'];
             $listPro = [];
-            foreach($cart as $item) {
+            foreach ($cart as $item) {
                 $id = $item['id'];
                 $qtt = $item['qtt'];
                 $pro = get_product($id);
@@ -79,8 +79,11 @@ if (isset($_GET['act'])) {
         case "removeCart":
             $cart = $_SESSION['cart'];
             $id = $_POST['id'];
-            foreach($cart as $index => $item) {
-                if($item['id'] == $id) unset($_SESSION['cart'][$index]);
+
+            foreach ($cart as $index => $item) {
+                if ($item['id'] == $id) {
+                    unset($_SESSION['cart'][$index]);
+                }
                 break;
             }
             break;

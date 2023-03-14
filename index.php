@@ -28,8 +28,12 @@
                 require "view/shop-cart.php";
                 break;
             
+            case "shop-grid-left":
+                require "view/shop-grid-left.php";
+                break;
+            
             default:
-                require "view/home.php";
+                require "view/page-404.php";
                 break;
         }
     } else {

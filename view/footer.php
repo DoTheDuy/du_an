@@ -409,7 +409,7 @@
 						</tbody>
 					</table>
 				</div>
-			</div>
+			</div> 
 		</div>
 	</div>
 </div>
@@ -501,6 +501,7 @@
 </div>
 
 <!-- Dependency Scripts -->
+<script src="assets/js/cart.js"></script>
 <script src="libs/popper/js/popper.min.js"></script>
 <script src="libs/jquery/js/jquery.min.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
