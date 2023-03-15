@@ -82,8 +82,8 @@
                   <div class="sidebar__icon"><svg class="icon icon-discovery">
                       <use xlink:href="img/sprite.svg#icon-discovery"></use>
                     </svg></div>
-                  <div class="sidebar__text">Schedules</div>
-                </a><a class="sidebar__item" href="payouts.html">
+                  <div class="sidebar__text">Khach hang</div>
+                </a><a class="sidebar__item" href="/api/main.php?act=list_user">
                   <div class="sidebar__icon"><svg class="icon icon-wallet">
                       <use xlink:href="img/sprite.svg#icon-wallet"></use>
                     </svg></div>
