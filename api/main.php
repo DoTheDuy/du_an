@@ -6,6 +6,7 @@ require "../model/product.php";
 require "../model/user.php";
 require "../global.php";
 
+include "view/header.php";
 
 if (isset($_GET['act'])) {
 
@@ -160,5 +161,6 @@ if (isset($_GET['act'])) {
             break;
         default:
     }
+    include "view/footer.php";
 } else {
 }

@@ -1,10 +1,10 @@
 <?php
 
-function user_insert($mat_Khau, $ten_khach_hang, $email, $chuc_nang)
-{
-    $sql = "insert into khach_hang values(null,'$ten_khach_hang','$mat_khau','','$email','','','$chuc_nang')";
-    pdo_execute($sql);
-}
+//function user_insert($mat_Khau, $ten_khach_hang, $email, $chuc_nang)
+//{
+//    $sql = "insert into khach_hang values(null,'$ten_khach_hang','','$email','','','$mat_khau','$chuc_nang')";
+//    pdo_execute($sql);
+//}
 
 function insert_user($ten_khach_hang, $so_dt, $email, $chuc_nang, $mat_khau, $dia_chi)
 {

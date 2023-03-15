@@ -3,10 +3,10 @@ if(is_array($user)){
     extract($user);
 }
 ?>
-<div class="container">
+<div style="margin-left: 350px" class="container">
     <h2>Sửa thông tin khách hàng</h2>
 
-    <form action="/api/main.php?act=updateuser" method="POST" >
+    <form action="index.php?act=updateuser" method="POST" >
         <div class="form-body">
             <div style="width:50%;">
                 <div class="form-label">
@@ -57,7 +57,7 @@ if(is_array($user)){
             <input class="reset" type="hidden" name="id" value="<?php echo $ma_khach_hang;?>">
             <input class="reset" type="submit" name="update_user" value="Update">
             <input  type="reset" value="Nhập lại" class="reset">
-            <a href="/api/main.php?act=list_user"><input type="button" value="Danh sách" class="reset"></a>
+            <a href="index.php?act=list_user"><input type="button" value="Danh sách" class="reset"></a>
 
         </div>
         <?php

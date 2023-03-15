@@ -1,25 +1,24 @@
-<?php
-<div class="container">
+<div style="margin-left:300px;" class="container">
 
     <section class="list_products">
 
         <div class="wrapper-table" style="margin-top: 0px;">
             <div class="cot4">
                 <div class="dropdown">
-                    <a href="/api/main.php?act=add_user" ><input class="dropbtn adc" type="button" value="Thêm mới"></a>
+                    <a href="index.php?act=add_user" ><input class="dropbtn adc" type="button" value="Thêm mới"></a>
                 </div>
                 <div class="dropdown">
-                    <a href="/api/main.php?act=list_user&id=0">
+                    <a href="index.php?act=list_user&id=0">
                         <button class="dropbtn adc ">Vai trò</button>
                     </a>
                     <div class="dropdown-content add">
                     <?php
-                        echo '<a href="/api/main.php?act=list_user&id=1">Nhân viên</a>';
-                        echo '<a href="/api/main.php?act=list_user&id=2">Khách hàng</a>';
+                        echo '<a href="index.php?act=list_user&id=1">Nhân viên</a>';
+                        echo '<a href="index.php?act=list_user&id=2">Khách hàng</a>';
                     ?>
                     </div>
                 </div>
-                <form method="POST" action="/api/main.php?act=list_user">
+                <form method="POST" action="index.php?act=list_user">
                     <div class="right3">
                         <div class="cot22">
                         <input id="id2" name="kyw" type="text" placeholder="Nhập tên người dùng">
@@ -40,7 +39,6 @@
                     <td width="30px">ID</td>
                     <td width="100px">Tài khoản</td>
                     <td width="80px">Mật khẩu</td>
-                    <td width="170px">Tên đầy đủ</td>
                     <td width="110px">Email</td>
                     <td width="100px">Số điện thoại</td>
                     <td width="200px">Địa chỉ</td>
@@ -50,8 +48,8 @@
                 <?php
                     foreach ($list_user as $user) {
                         extract($user);
-                        $update_user="/api/main.php?act=update_user&id=".$ma_khach_hang;
-                        $delete_user="/api/main.php?act=delete_user&id=".$ma_khach_hang;
+                        $update_user="index.php?act=update_user&id=".$ma_khach_hang;
+                        $delete_user="index.php?act=delete_user&id=".$ma_khach_hang;
                         if($chuc_nang == 1 ){
                             $vaitro = "Nhân viên";
                         }else if($chuc_nang ==2){
@@ -94,3 +92,8 @@
 
     </section>
 </div>
+
+
+
+
+

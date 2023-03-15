@@ -1,8 +1,8 @@
 
-<div class="container">
+<div style="margin-left: 350px" class="container">
     <h2>Nhập thông tin khách hàng</h2>
 
-    <form action="/api/main.php?act=add_user" method="POST" >
+    <form action="index.php?act=add_user" method="POST" >
         <div class="form-body">
 
             <div style="width:50%;">
@@ -40,7 +40,7 @@
         <div class="them">
             <input class="reset" type="submit" name="themmoi" value="Thêm mới">
             <input  type="reset" value="Nhập lại" class="reset">
-            <a href="/api/main.php?act=list_user"><input type="button" value="Danh sách" class="reset"></a>
+            <a href="index.php?act=list_user"><input type="button" value="Danh sách" class="reset"></a>
         </div>
         <?php
         if(isset($thongbao)&&($thongbao!=""))
