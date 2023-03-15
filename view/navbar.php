@@ -38,7 +38,7 @@
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 header-center">
                         <div class="site-logo">
-                            <a href="index2.html">
+                            <a href="index.php">
                                 <img width="400" height="79" src="media/logo.png" alt="Ruper – Furniture HTML Theme" />
                             </a>
                         </div>
@@ -140,7 +140,7 @@
                                 <nav id="main-navigation">
                                     <ul id="menu-main-menu" class="menu">
                                         <li class="level-0 menu-item menu-item-has-children mega-menu current-menu-item">
-                                            <a href="index.html"><span class="menu-item-text">Home</span></a>
+                                            <a href="index.php"><span class="menu-item-text">Home</span></a>
                                             <div class="sub-menu">
                                                 <div class="row">
                                                     <div class="col-md-6">
@@ -148,7 +148,7 @@
                                                             <h2 class="sub-menu-title">Furniture 1</h2>
                                                             <ul class="menu-list">
                                                                 <li>
-                                                                    <a href="index.html"><span class="menu-item-text">Home
+                                                                    <a href="index.php"><span class="menu-item-text">Home
                                                                             Categories</span></a>
                                                                 </li>
                                                                 <li>
@@ -419,7 +419,7 @@
 
                         <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 text-center header-center">
                             <div class="site-logo">
-                                <a href="index2.html">
+                                <a href="index.php">
                                     <img width="400" height="79" src="media/logo.png" alt="Ruper – Furniture HTML Theme" />
                                 </a>
                             </div>
@@ -514,7 +514,6 @@
                                                     </li>
                                                 </ul>
                                             </div> -->
-                                            
                                         </div>
                                     </div>
                                 </div>

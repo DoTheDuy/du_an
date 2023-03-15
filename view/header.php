@@ -31,6 +31,7 @@
 	<!-- Site Stylesheet -->
 	<link rel="stylesheet" href="assets/css/app.css" type="text/css">
 	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/toast.css" type="text/css">
 
 	<!-- Google Web Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
@@ -39,5 +40,6 @@
 
 
 <body class="home home-2 title-2">
+	<div id="toast"></div>
 	<div id="page" class="hfeed page-wrapper">
 		
