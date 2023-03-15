@@ -4,5 +4,5 @@
   include "products.php";
 
   include "footer.php";
-  
+
 ?>

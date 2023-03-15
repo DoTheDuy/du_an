@@ -3,6 +3,7 @@ session_start();
 
 require "../model/pdo.php";
 require "../model/product.php";
+require "../model/user.php";
 require "../global.php";
 
 
