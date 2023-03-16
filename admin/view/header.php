@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="styles/left.css">
     <link rel="stylesheet" href="styles/content.css">
     <link rel="stylesheet" href="styles/list.css">
+    <script src="https://kit.fontawesome.com/db2d8b65e2.js" crossorigin="anonymous"></script>
   <script>
     var viewportmeta = document.querySelector('meta[name="viewport"]');
     if (viewportmeta) {
@@ -85,7 +86,7 @@
                   <div class="sidebar__icon"><svg class="icon icon-discovery">
                       <use xlink:href="img/sprite.svg#icon-discovery"></use>
                     </svg></div>
-                  <div class="sidebar__text">Khach hang</div>
+                  <div class="sidebar__text"> Khach hang</div>
                 </a><a class="sidebar__item" href="index.php?act=list_user">
                   <div class="sidebar__icon"><svg class="icon icon-wallet">
                       <use xlink:href="img/sprite.svg#icon-wallet"></use>

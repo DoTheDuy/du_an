@@ -1,14 +1,4 @@
 <?php
-//  include "header.php";
-//
-//  include "products.php";
-//
-//  include "footer.php";
-//
-//?>
-
-
-<?php
 session_start();
 
 require "../model/pdo.php";
