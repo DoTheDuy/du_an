@@ -38,4 +38,5 @@
     }
 
     require "view/footer.php";
+    echo "hieenr thij thaaats bai";
 ?>

@@ -24,6 +24,8 @@ if(is_array($user)){
                         <?php
                         if($chuc_nang == 1) {
                             echo '<option value="1" selected>Nhân viên</option>';
+                            echo '<option value="1" selected>djsjadhsjdhsd</option>';
+
                             echo '<option value="2">Khách hàng</option>';
                         }else if($chuc_nang == 2){
                             echo '<option value="1">Nhân viên</option>';
