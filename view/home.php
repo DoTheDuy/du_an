@@ -148,7 +148,7 @@
 								<div class="block-content">
 									<div class="products-list grid">
 										<div class="row">
-											<div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
+											<!-- <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
 												<div class="items">
 													<div class="products-entry clearfix product-wapper">
 														<div class="products-thumb">
@@ -656,7 +656,7 @@
 														</div>
 													</div>
 												</div>
-											</div>
+											</div> -->
 										</div>
 									</div>
 									<div class="products-loadmore">
@@ -1012,8 +1012,8 @@
 											</a>
 										</div>
 										<div class="product-button">
-											<div class="btn-add-to-cart" data-title="Add to cart">
-												<a rel="nofollow" href="" class="product-btn button" onclick="addCart(${id})">Add to
+											<div class="btn-add-to-cart_ct" data-title="Add to cart">
+												<a rel="nofollow" class="product-btn button" onclick="addCart(${id},1, this)">Add to
 													cart</a>
 											</div>
 											<div class="btn-wishlist" data-title="Wishlist">
@@ -1060,4 +1060,3 @@
 </script>
 
 
-<!-- <a href="shop-cart.html" class="added-to-cart product-btn" title="View cart" tabindex="0">View cart</a> -->

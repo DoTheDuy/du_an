@@ -9,6 +9,7 @@
         $_SESSION['cart'] = [];
     }
 
+
     if(isset($_GET['act'])) {
 
         $act = $_GET['act'];
@@ -20,16 +21,27 @@
                 if(isset($_GET['id'])){
                     $id = $_GET['id'];
                     $pro = get_product($id);
+                    require "view/shop-details.php";
+                } else {
+                    require "view/page-404.php";
                 }
-                require "view/shop-details.php";
+                
                 break;
             
             case "shop-cart":
                 require "view/shop-cart.php";
                 break;
             
+            case "shop-grid-left":
+                require "view/shop-grid-left.php";
+                break;
+            
+            case "shop-checkout":
+                require "view/shop-checkout.php";
+                break;
+            
             default:
-                require "view/home.php";
+                require "view/page-404.php";
                 break;
         }
     } else {

@@ -34,20 +34,20 @@ if (isset($_GET['act'])) {
         case "addCart":
             if ($_POST['id']) {
                 $cart = $_SESSION['cart'];
-                $qtt = $_POST['qtt'];
+                $qty = $_POST['qty'];
                 $id = $_POST['id'];
                 $add = 1;
-                foreach($cart as $item) {
-                    if($item['id'] == $id) {
+                foreach ($cart as $index => $item) {
+                    if ($item['id'] == $id) {
                         $add = 0;
-                        $item['qtt'] += $qtt;
+                        $_SESSION['cart'][$index]['qty'] += $qty;
                         break;
                     }
                 }
-                if($add == 1) {
+                if ($add == 1) {
                     $sp = [
                         'id' => $id,
-                        'qtt' => $qtt,
+                        'qty' => $qty,
                     ];
                     $_SESSION['cart'][] = $sp;
                 }
@@ -57,9 +57,9 @@ if (isset($_GET['act'])) {
         case "loadCart":
             $cart = $_SESSION['cart'];
             $listPro = [];
-            foreach($cart as $item) {
+            foreach ($cart as $item) {
                 $id = $item['id'];
-                $qtt = $item['qtt'];
+                $qty = $item['qty'];
                 $pro = get_product($id);
                 $name = $pro['ten_san_pham'];
                 $img = explode(", ", $pro['anh_san_pham'])[0];
@@ -67,7 +67,7 @@ if (isset($_GET['act'])) {
                 $proLoad = [
                     'id' => $id,
                     "name" => $name,
-                    'qtt' => $qtt,
+                    'qty' => $qty,
                     'img' => $img,
                     'price' => $price,
                 ];
@@ -79,10 +79,42 @@ if (isset($_GET['act'])) {
         case "removeCart":
             $cart = $_SESSION['cart'];
             $id = $_POST['id'];
-            foreach($cart as $index => $item) {
-                if($item['id'] == $id) unset($_SESSION['cart'][$index]);
+
+            foreach ($cart as $index => $item) {
+                if ($item['id'] == $id) {
+                    unset($_SESSION['cart'][$index]);
+                }
                 break;
             }
+            break;
+
+        case "updateCart":
+            $_id = $_POST['id'];
+            $_qty = $_POST['qty'];
+            $_id = explode(",", $_id);
+            $_qty = explode(",", $_qty);
+            $cart = [];
+            $ms = [];
+            for ($i = 0; $i < count($_id); $i++) {
+                if ($_qty[$i] == 0) {
+                    $ms = ['error', 'Có sản phẩn chưa có số lượng xin vui lòng bổ xung'];
+                }
+                $sp = [
+                    'id' => $_id[$i],
+                    'qty' => $_qty[$i],
+                ];
+                $cart[] = $sp;
+            };
+            if ($ms == []) {
+                if ($_SESSION['cart'] == $cart) {
+                    $ms = ['error', 'Giỏ hàng chưa có thay đổi'];
+                } else {
+                    $ms = ['success', 'Giỏ hàng đã được cập nhật'];
+                    $_SESSION['cart'] = $cart;
+                }
+            }
+            echo_json($ms);
+
             break;
 
         default:

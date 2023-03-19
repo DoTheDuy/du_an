@@ -108,7 +108,7 @@ $listImg = explode(", ", $anh_san_pham)
 													<button type="button" class="minus">-</button>
 												</div>
 												<div class="btn-add-to-cart_ct">
-													<a  class="button" tabindex="0" onclick="addCartQtt(<?= $ma_san_pham ?>)">Add to cart</a>
+													<a  class="button" tabindex="0" onclick="addCartQtt(<?= $ma_san_pham ?>, this)">Add to cart</a>
 												</div>
 											</div>
 											<div class="btn-quick-buy" data-title="Wishlist">
@@ -462,26 +462,3 @@ $listImg = explode(", ", $anh_san_pham)
 	</div><!-- #main-content -->
 </div>
 
-<script src="assets/js/cart.js"></script>
-<script>
-	function addCartQtt(id) {
-		// Event.preventDefault()
-		var qtt = document.querySelector("input[name='quantity']").value
-		addCart(id, Number(qtt))
-		showBtnCart()
-	}
-
-	function showBtnCart() {
-		var productTopInfo = document.querySelector('.product-top-info')
-		var btn = productTopInfo.querySelector('.btn-add-to-cart_ct')
-		var btnAdd = btn.querySelector(".button")
-		btnAdd.classList.add("loading")
-		setTimeout(() => {
-			btnAdd.classList.remove('loading')
-			btnAdd.classList.add("added")
-			btn.innerHTML = `
-			<a href="?act=shop-cart" class="added-to-cart product-btn show" title="View cart" tabindex="0">View cart</a>
-		`
-		}, 1000);
-	}
-</script>

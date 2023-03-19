@@ -75,8 +75,8 @@
                                     <h1 class="product-title entry-title">Chair Oak Matt Lacquered</h1>
                                     <div class="price-single">
                                         <div class="price">
-                                            <del><span>$150.00</span></del>
-                                            <span>$100.00</span>
+                                            <del><span>$000</span></del>
+                                            <span>$000</span>
                                         </div>
                                     </div>
                                     <div class="product-rating">

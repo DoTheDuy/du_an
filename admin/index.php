@@ -1,7 +1,8 @@
 <?php
-  include "header.php";
+  include "view/header.php";
 
-  include "products.php";
+  include "view/products.php";
 
-  include "footer.php";
+  include "view/footer.php";
+  
 ?>
