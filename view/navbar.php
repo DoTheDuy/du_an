@@ -439,8 +439,8 @@
                                                         <h2>Sign in</h2>
                                                         <p class="status"></p>
                                                         <div class="content">
-                                                            <div class="username">
-                                                                <input type="text" required="required" class="input-text" name="username" id="username" placeholder="Your name" />
+                                                            <div class="email">
+                                                                <input type="text" required="required" class="input-text" name="email" id="email" placeholder="Your email" />
                                                             </div>
                                                             <div class="password">
                                                                 <input class="input-text" required="required" type="password" name="password" id="password" placeholder="Password" />
