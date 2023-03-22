@@ -27,19 +27,13 @@
 												<div class="billing-fields-wrapper">
 													<p class="form-row form-row-first validate-required">
 														<label>Họ và tên <span class="required" title="required">*</span></label>
-														<span class="input-wrapper"><input type="text" class="input-text" name="billing_first_name" value=""></span>
+														<span class="input-wrapper"><input type="text" class="input-text" name="name" value="<?= $ten_khach_hang ?>"></span>
 													</p>
 													<p class="form-row form-row-wide validate-required">
 														<label>Tỉnh / Thành phố <span class="required" title="required">*</span></label>
 														<span class="input-wrapper">
 															<select name="billing_country" class="custom-select" id="province">
-																<option value="">Select a country / region…</option>
-																<option value="AF">Afghanistan</option>
-																<option value="AX">Åland Islands</option>
-																<option value="AL">Albania</option>
-																<option value="DZ">Algeria</option>
-																<option value="AS">American Samoa</option>
-																<option value="AD">Andorra</option>
+
 															</select>
 														</span>
 													</p>
@@ -47,13 +41,7 @@
 														<label>Quận / Huyện <span class="required" title="required">*</span></label>
 														<span class="input-wrapper">
 															<select name="billing_country" class="custom-select" id="district">
-																<option value="">Select a country / region…</option>
-																<option value="AF">Afghanistan</option>
-																<option value="AX">Åland Islands</option>
-																<option value="AL">Albania</option>
-																<option value="DZ">Algeria</option>
-																<option value="AS">American Samoa</option>
-																<option value="AD">Andorra</option>
+
 															</select>
 														</span>
 													</p>
@@ -61,13 +49,7 @@
 														<label>Thị trấn / Xã <span class="required" title="required">*</span></label>
 														<span class="input-wrapper">
 															<select name="billing_country" class="custom-select" id="ward">
-																<option value="">Select a country / region…</option>
-																<option value="AF">Afghanistan</option>
-																<option value="AX">Åland Islands</option>
-																<option value="AL">Albania</option>
-																<option value="DZ">Algeria</option>
-																<option value="AS">American Samoa</option>
-																<option value="AD">Andorra</option>
+
 															</select>
 														</span>
 													</p>
@@ -75,25 +57,25 @@
 													<p class="form-row address-field form-row-wide" id="so">
 														<label>Tên đường , Số nhà <span class="required" title="required">*</span></label>
 														<span class="input-wrapper">
-															<input type="text" class="input-text" name="billing_address_2" placeholder="Tên đường, Số nhà" value="">
+															<input type="text" class="input-text" name="billing_address_2" placeholder="Tên đường, Số nhà" value="" id="detail">
 														</span>
 													</p>
 
 													<p class="form-row form-row-wide validate-required validate-phone">
 														<label>Số điện thoại <span class="required" title="required">*</span></label>
 														<span class="input-wrapper">
-															<input type="tel" class="input-text" name="billing_phone" value="">
+															<input type="tel" class="input-text" name="phone" value="<?= $so_dt ?>">
 														</span>
 													</p>
 													<p class="form-row form-row-wide validate-required validate-email">
 														<label>Email <span class="required" title="required">*</span></label>
 														<span class="input-wrapper">
-															<input type="email" class="input-text" name="billing_email" value="" autocomplete="off">
+															<input type="email" class="input-text" name="billing_email" value="<?= $user['email']  ?>" autocomplete="off" disabled>
 														</span>
 													</p>
 												</div>
 											</div>
-											<div class="account-fields">
+											<!-- <div class="account-fields">
 												<p class="form-row form-row-wide">
 													<label class="checkbox">
 														<input class="input-checkbox" type="checkbox" name="createaccount" value="1">
@@ -110,9 +92,9 @@
 													</p>
 													<div class="clear"></div>
 												</div>
-											</div>
+											</div> -->
 										</div>
-										<div class="shipping-fields">
+										<!-- <div class="shipping-fields">
 											<p class="form-row form-row-wide ship-to-different-address">
 												<label class="checkbox">
 													<input class="input-checkbox" type="checkbox" name="ship_to_different_address" value="1">
@@ -187,7 +169,7 @@
 													</span>
 												</p>
 											</div>
-										</div>
+										</div> -->
 										<div class="additional-fields">
 											<p class="form-row notes">
 												<label>Order notes <span class="optional">(optional)</span></label>
@@ -242,10 +224,10 @@
 													<div data-title="Shipping">
 														<ul class="shipping-methods custom-radio">
 															<li>
-																<input type="radio" name="shipping_method" data-index="0" value="free_shipping" class="shipping_method" checked="checked"><label>Free shipping</label>
+																<input type="radio" name="shipping_method" data-index="0" value="normal" class="shipping_method" <?php if($ship == "" || $ship == "normal") echo 'checked="checked"';?>><label>Giao bình thường</label>
 															</li>
 															<li>
-																<input type="radio" name="shipping_method" data-index="0" value="flat_rate" class="shipping_method"><label>Flat rate</label>
+																<input type="radio" name="shipping_method" data-index="0" value="fast" class="shipping_method" <?php if($ship == "fast") echo 'checked="checked"' ?>><label>Giao nhanh</label>
 															</li>
 														</ul>
 													</div>
@@ -262,13 +244,13 @@
 											<div id="payment" class="checkout-payment">
 												<ul class="payment-methods methods custom-radio">
 													<li class="payment-method">
-														<input type="radio" class="input-radio" name="payment_method" value="bacs" checked="checked">
-														<label for="payment_method_bacs">Direct bank transfer</label>
+														<input type="radio" class="input-radio" name="payment_method" value="tt" checked="checked">
+														<label for="payment_method_bacs">Thanh toán khi nhận hàng</label>
 														<div class="payment-box">
-															<p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
+															<p>Quý khách sẽ thanh toán cho người giao hàng khi sản phẩm đến nơi</p>
 														</div>
 													</li>
-													<li class="payment-method">
+													<!-- <li class="payment-method">
 														<input type="radio" class="input-radio" name="payment_method" value="cheque">
 														<label>Check payments</label>
 														<div class="payment-box">
@@ -288,13 +270,13 @@
 														<div class="payment-box">
 															<p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
 														</div>
-													</li>
+													</li> -->
 												</ul>
 												<div class="form-row place-order">
 													<div class="terms-and-conditions-wrapper">
 														<div class="privacy-policy-text"></div>
 													</div>
-													<button type="submit" class="button alt" name="checkout_place_order" value="Place order">Place order</button>
+													<div class="btn-custom full-width" id="checkout_place_order">Place order</div>
 												</div>
 											</div>
 										</div>
@@ -312,3 +294,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="assets/js/address.js"></script>
 <script src="assets/js/bill.js"></script>
+<script src="assets/js/checkout.js"></script>
+

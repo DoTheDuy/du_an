@@ -126,23 +126,13 @@
 										<div class="my-account-account-details">
 											<form class="edit-account" action="#" method="post">
 												<p class="form-row">
-													<label for="account_first_name">First name <span class="required">*</span></label>
-													<input type="text" class="input-text" name="account_first_name">
-												</p>
-												<p class="form-row">
-													<label>Last name <span class="required">*</span></label>
-													<input type="text" class="input-text" name="account_last_name">
-												</p>
-												<div class="clear"></div>
-												<p class="form-row">
-													<label>Display name <span class="required">*</span></label>
-													<input type="text" class="input-text" name="account_display_name">
-													<span><em>This will be how your name will be displayed in the account section and in reviews</em></span>
+													<label for="account_first_name">Họ và tên <span class="required">*</span></label>
+													<input type="text" class="input-text" name="account_name" value="<?php if($user != []) echo $user['name'] ?>">
 												</p>
 												<div class="clear"></div>
 												<p class="form-row">
 													<label>Email address <span class="required">*</span></label>
-													<input type="email" class="input-text" name="account_email">
+													<input type="email" class="input-text" name="account_email" value="<?php if($user != []) echo $user['email'] ?>" disabled>
 												</p>
 												<fieldset>
 													<legend>Password change</legend>
@@ -161,7 +151,7 @@
 												</fieldset>
 												<div class="clear"></div>
 												<p class="form-row">
-													<button type="submit" class="button" name="save_account_details" value="Save changes">Save changes</button>
+													<div class="btn-custom" id="save-changes">Save changes</div>
 												</p>
 											</form>
 										</div>
@@ -175,3 +165,6 @@
 		</div><!-- #primary -->
 	</div><!-- #main-content -->
 </div>
+<script src="assets/js/account.js">
+	
+</script>

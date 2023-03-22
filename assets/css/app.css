@@ -31192,3 +31192,71 @@ body i[class~=slick-arrow][class~=fa-angle-right] {
 #site-footer[class~=three-columns] [class~=column-right] [class~=column-wrap] {
   max-width: 3.75in;
 }
+
+.button-form:hover {
+  opacity: 0.8;
+}
+
+.user-header {
+  position: relative;
+  cursor: pointer;
+  display:block;
+}
+
+.user-header:hover ul {
+  display: block;
+  
+}
+
+.user-header ul {
+  display: none;
+  margin-top: 12px;
+  padding: 0;
+  position: absolute;
+  list-style: none;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+  min-width: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.user-header::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 12px;
+  background-color: transparent;
+}
+
+.user-header li a {
+  display: block;
+  width: 100%;
+  padding: 4px 12px 4px 12px;
+}
+
+.user-header li a:hover {
+  background-color: #8d8d8d !important;
+  color: white !important;
+}
+
+.btn-custom {
+  width: fit-content;
+  line-height: 37.5pt;
+  padding: 0 3.125pc;
+  background-color: black;
+  color: white;
+}
+
+.full-width{
+  width: 100%;
+  text-align: center;
+}
+
+.btn-custom:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+

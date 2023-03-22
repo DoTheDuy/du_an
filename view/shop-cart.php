@@ -66,10 +66,10 @@
 												<div>
 													<ul class="shipping-methods custom-radio">
 														<li>
-															<input type="radio" name="shipping_method" data-index="0" value="free_shipping" class="shipping_method" checked="checked"><label>Free shipping</label>
+															<input type="radio" name="shipping_method" data-index="0" value="normal" class="shipping_method" checked="checked"><label>Giao bình thường</label>
 														</li>
 														<li>
-															<input type="radio" name="shipping_method" data-index="0" value="flat_rate" class="shipping_method"><label>Flat rate</label>
+															<input type="radio" name="shipping_method" data-index="0" value="fast" class="shipping_method"><label>Giao nhanh</label>
 														</li>
 													</ul>
 													<p class="shipping-desc">
@@ -83,7 +83,7 @@
 											</div>
 										</div>
 										<div class="proceed-to-checkout">
-											<a  class="checkout-button button" value="checkout" onclick="updateCart(this)">
+											<a class="checkout-button button" value="checkout" onclick="updateCart(this)">
 												Proceed to checkout
 											</a>
 										</div>
@@ -91,7 +91,7 @@
 								</div>
 							</div>
 						</div>
-						
+
 					</div>
 				</div>
 			</div><!-- #content -->
@@ -100,5 +100,11 @@
 </div>
 
 <script>
-	
+	$(document).ready(function() {
+		orderTotal()
+	});
+
+	$('.shipping-methods').click(function(e) {
+		orderTotal()
+	});
 </script>

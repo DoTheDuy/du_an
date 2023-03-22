@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <!-- Mirrored from caketheme.com/html/ruper/shop-grid-fullwidth.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Mar 2023 01:20:23 GMT -->
@@ -25,7 +24,7 @@
 	<link rel="stylesheet" href="libs/slick/css/slick.css" type="text/css">
 	<link rel="stylesheet" href="libs/slick/css/slick-theme.css" type="text/css">
 	<link rel="stylesheet" href="libs/mmenu/css/mmenu.min.css" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
 
 	<!-- Site Stylesheet -->
@@ -33,9 +32,10 @@
 	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css">
 	<link rel="stylesheet" href="assets/css/toast.css" type="text/css">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-    crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+	<script src="assets/js/toast.js"></script>
+
 
 	<!-- Google Web Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
@@ -46,4 +46,3 @@
 <body class="home home-2 title-2">
 	<div id="toast"></div>
 	<div id="page" class="hfeed page-wrapper">
-		

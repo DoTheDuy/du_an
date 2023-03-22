@@ -253,7 +253,7 @@ function changeQuantityCartTable(ele, event) {
             var price = Number(productPrice.innerHTML.slice(1))
             var total = quantity * price
             totalEle.innerHTML = `$${total.toFixed(2)}`
-            console.log(quantity)
+            // console.log(quantity)
         }
     } else if (classEle.contains('plus')) {
         var quantity = Number(quantityLast) + 1
@@ -326,8 +326,24 @@ function updateCart(ele) {
         processData: false,
         data: form_data,
         success: function (suc) {
-            if(ele.getAttribute('value') == "checkout") {
-                window.location = "index.php?act=shop-checkout"
+            if (ele.getAttribute('value') == "checkout") {
+                $.ajax({
+                    type: "GET",
+                    url: "api/main.php?act=checkLogin",
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    success: function (suc) {
+                        var ship = $('input[name = "shipping_method"]:checked').val()
+                        if (JSON.parse(suc)) window.location = "index.php?act=shop-checkout&ship=" + ship
+                        else toast({
+                            title: "Thất bại!",
+                            message: "Bạn phải đăng nhập trước khi thanh toán",
+                            type: "error",
+                            duration: 5000
+                        });
+                    }
+                });
             } else {
                 var ms = JSON.parse(suc)
                 if (ms[0] == 'error') {
@@ -346,10 +362,31 @@ function updateCart(ele) {
                     });
                 }
             }
-            
+
         }
     });
 
+}
+
+function orderTotal() {
+    var total = Number($('.subtotal-price span').text().slice(1))
+    if(total == 0) {
+        total = Number($('.cart-subtotal span').text().slice(1))
+    }
+    // console.log(total)
+    if (total > 400) {
+        $('.order-total span').text(`$${total}`)
+        return
+    }
+
+    var shipValue = $('input[name = "shipping_method"]:checked').val()
+    if (shipValue == "fast") {
+        total += 20
+    } else {
+        total += 10
+    }
+
+    $('.order-total span').text(`$${total}`)
 }
 
 

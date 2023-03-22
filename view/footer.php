@@ -502,6 +502,7 @@
 
 <!-- Dependency Scripts -->
 <script src="assets/js/cart.js"></script>
+
 <script src="libs/popper/js/popper.min.js"></script>
 <script src="libs/jquery/js/jquery.min.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
@@ -516,7 +517,8 @@
 <script src="libs/select2/js/select2.min.js"></script>
 <!-- Site Scripts -->
 <script src="assets/js/app.js"></script>
-<script src="assets/js/toast.js"></script>
+<script src="assets/js/login.js"></script>
+
 </body>
 
 <!-- Mirrored from caketheme.com/html/ruper/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Mar 2023 01:19:01 GMT -->

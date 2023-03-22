@@ -3,6 +3,7 @@ session_start();
 
 require "../model/pdo.php";
 require "../model/product.php";
+require "../model/user.php";
 require "../global.php";
 
 
@@ -115,6 +116,55 @@ if (isset($_GET['act'])) {
             }
             echo_json($ms);
 
+            break;
+
+        case "login":
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+            $user = get_user($email, $password);
+            if($user != []) {
+                $_SESSION['user'] = [
+                    "id" => $user['ma_khach_hang'],
+                    "name" => $user['ten_khach_hang'],
+                    "email" => $user['email'],
+                ];
+                echo_json(true);
+            } else {
+                echo_json(false);
+            }
+            break;
+
+        case "logout":
+            unset($_SESSION['user']);
+            break;
+
+        case "register":
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+            echo_json(add_user($email, $password));
+            break;
+
+        case "checkPassword":
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+            $user = get_user($email, $password);
+            if($user != []) {
+                echo_json(true);
+            } else {
+                echo_json(false);
+            }
+            break;
+
+        case "changeInfo":
+            $password = $_POST['password'];
+            $passwordNew = $_POST['passwordNew'];
+            $id = $_SESSION['user']['id'];
+            update_name_password_user($id, $name, $passwordNew);
+            break;
+
+        case "checkLogin":
+            if(isset($_SESSION['user'])) echo_json(true);
+            else echo_json(false);
             break;
 
         default:

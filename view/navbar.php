@@ -1,3 +1,9 @@
+<?php
+if (isset($_SESSION['user'])) {
+    $user = $_SESSION['user'];
+}
+?>
+
 <header id="site-header" class="site-header header-v2">
     <div id="header-topbar" class="topbar-v1 hidden-sm hidden-xs">
         <div class="topbar-inner">
@@ -128,7 +134,7 @@
         </div>
     </div>
 
-    
+
 
     <div class="header-desktop">
         <div class="header-wrapper">
@@ -424,67 +430,78 @@
                                 </a>
                             </div>
                         </div>
-
                         <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 header-right">
                             <div class="header-page-link">
                                 <!-- Login -->
-                                <div class="login-header">
-                                    <a class="active-login" href="#">Login</a>
-                                    <div class="form-login-register">
-                                        <div class="box-form-login">
-                                            <div class="active-login"></div>
-                                            <div class="box-content">
-                                                <div class="form-login active">
-                                                    <form id="login_ajax" method="post" class="login">
-                                                        <h2>Sign in</h2>
-                                                        <p class="status"></p>
-                                                        <div class="content">
-                                                            <div class="email">
-                                                                <input type="text" required="required" class="input-text" name="email" id="email" placeholder="Your email" />
-                                                            </div>
-                                                            <div class="password">
-                                                                <input class="input-text" required="required" type="password" name="password" id="password" placeholder="Password" />
-                                                            </div>
-                                                            <div class="rememberme-lost">
-                                                                <div class="rememberme">
-                                                                    <input name="rememberme" type="checkbox" id="rememberme" value="forever" />
-                                                                    <label for="rememberme" class="inline">Remember me</label>
+                                <?php if ($user == []) { ?>
+                                    <div class="login-header">
+                                        <a class="active-login" href="#">Login</a>
+                                        <div class="form-login-register">
+                                            <div class="box-form-login">
+                                                <div class="active-login"></div>
+                                                <div class="box-content">
+                                                    <div class="form-login active">
+                                                        <form id="login_ajax" method="post" class="login">
+                                                            <h2>Sign in</h2>
+                                                            <p class="status"></p>
+                                                            <div class="content">
+                                                                <div class="username">
+                                                                    <input type="text" required="required" class="input-text" name="email" id="email" placeholder="Your email" />
                                                                 </div>
-                                                                <div class="lost_password">
-                                                                    <a href="forgot-password.html">Lost your
-                                                                        password?</a>
+                                                                <div class="password">
+                                                                    <input class="input-text" required="required" type="password" name="password" id="password" placeholder="Password" />
                                                                 </div>
+                                                                <div class="rememberme-lost">
+                                                                    <div class="rememberme">
+                                                                        <input name="rememberme" type="checkbox" id="rememberme" value="forever" />
+                                                                        <label for="rememberme" class="inline">Remember me</label>
+                                                                    </div>
+                                                                    <div class="lost_password">
+                                                                        <a href="forgot-password.html">Lost your
+                                                                            password?</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="button-next-login button-form" style="background-color: black !important;" id="login">Login</div>
+                                                                <div class="button-next-reregister">Create An
+                                                                    Account</div>
                                                             </div>
-                                                            <div class="button-login">
-                                                                <input type="submit" class="button" name="login" value="Login" />
+                                                        </form>
+                                                    </div>
+                                                    <div class="form-register">
+                                                        <form method="post" class="register">
+                                                            <h2>REGISTER</h2>
+                                                            <div class="content">
+                                                                <div class="email">
+                                                                    <input type="email" class="input-text" placeholder="Email" name="email" id="reg_email" value="" />
+                                                                </div>
+                                                                <div class="password">
+                                                                    <input type="password" class="input-text" placeholder="Password" name="password" id="reg_password" />
+                                                                </div>
+                                                                <div class="button-next-reregister button-form" style="background-color: black !important;" id="register">Register</div>
+                                                                <div class="button-next-login">Already has an
+                                                                    account</div>
                                                             </div>
-                                                            <div class="button-next-reregister">Create An
-                                                                Account</div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                <div class="form-register">
-                                                    <form method="post" class="register">
-                                                        <h2>REGISTER</h2>
-                                                        <div class="content">
-                                                            <div class="email">
-                                                                <input type="email" class="input-text" placeholder="Email" name="email" id="reg_email" value="" />
-                                                            </div>
-                                                            <div class="password">
-                                                                <input type="password" class="input-text" placeholder="Password" name="password" id="reg_password" />
-                                                            </div>
-                                                            <div class="button-register">
-                                                                <input type="submit" class="button" name="register" value="Register" />
-                                                            </div>
-                                                            <div class="button-next-login">Already has an
-                                                                account</div>
-                                                        </div>
-                                                    </form>
+                                                        </form>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                <?php } else { ?>
+                                    <div class="user-header">
+                                        <span><?php
+                                                if ($user['name'] == "") {
+                                                    echo $user['email'];
+                                                } else {
+                                                    echo $user['name'];
+                                                }
+                                                ?></span>
+                                        <ul class="show">
+                                            <li><a>Chỉnh sửa thông tin</a></li>
+                                            <li id="logout" style="font-weight: 600;"><a>Đăng xuất</a></li>
+                                        </ul>
+                                    </div>
+                                <?php } ?>
 
                                 <!-- Search -->
                                 <div class="search-box">
@@ -525,3 +542,46 @@
         </div>
     </div>
 </header>
+
+<script>
+    $(".user-header").click(() => {
+        window.location = "?act=page-my-account"
+    })
+    $('#logout').click(() => {
+        $.get("api/main.php?act=logout",
+            function() {
+                window.location = "?act=page-login"
+            }
+        );
+    })
+
+    $('#login').click(() => {
+        validateLogin('#email', '#password')
+    })
+    $('#register').click(() => {
+        validateRegister('#reg_email', '#reg_password')
+    })
+    $('#email').on('keydown', function(e) {
+        if (e.which == 13 || e.keyCode == 13) {
+            $('#password').focus()
+        }
+    });
+
+    $('#password').on('keydown', function(e) {
+        if (e.which == 13 || e.keyCode == 13) {
+            validateLogin('#email', '#password')
+        }
+    });
+
+    $('#reg_email').on('keydown', function(e) {
+        if (e.which == 13 || e.keyCode == 13) {
+            $('#reg_password').focus()
+        }
+    });
+
+    $('#reg_password').on('keydown', function(e) {
+        if (e.which == 13 || e.keyCode == 13) {
+            validateRegister('#reg_email', '#reg_password')
+        }
+    });
+</script>
